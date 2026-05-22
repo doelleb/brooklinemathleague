@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Competition Archive — Brookline Math League</title>
+  <title>Competition Archive &mdash; Brookline Math League</title>
   <meta name="description" content="Past town-wide competition questions, answer keys, and results from the Brookline Middle School Math League." />
   <link rel="stylesheet" href="style.css" />
 </head>
@@ -11,127 +11,94 @@
 
   <nav>
     <div class="nav-inner">
-      <a href="index.html" class="nav-brand">
-        <div class="nav-logo">∑</div>
-        <span class="nav-title">Brookline Math League</span>
-      </a>
-      <button class="nav-toggle" aria-label="Toggle menu" onclick="document.querySelector('.nav-links').classList.toggle('open')">
-        <span></span><span></span><span></span>
-      </button>
-      <ul class="nav-links">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="competition-archive.html" class="active">Competition Archive</a></li>
-        <li><a href="news.html">News</a></li>
-      </ul>
+      <div class="nav-left" id="navMenu">
+        <div class="nav-item">
+          <a href="index.html">Home</a>
+        </div>
+        <div class="nav-item">
+          <a href="competition-archive.html" class="active">Competition Archive</a>
+        </div>
+        <div class="nav-item">
+          <a href="news.html">News</a>
+        </div>
+        <div class="nav-item">
+          <a href="mailto:brooklinemathleague@gmail.com">Contact</a>
+        </div>
+      </div>
+      <div class="nav-right">
+        <div class="nav-auth">
+          <a href="https://forms.gle/GKgvSdBBaipKtwSX9" target="_blank" rel="noopener">Apply</a>
+        </div>
+        <button class="nav-toggle" aria-label="Toggle menu" onclick="document.getElementById('navMenu').classList.toggle('open')">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
     </div>
   </nav>
 
-  <!-- Application banner -->
-  <div class="alert">
-    <div class="alert-inner">
-      <span class="alert-badge">Now Open</span>
-      <p>Coach applications are open — deadline <strong>May 31, 2025</strong>.
-        <a href="https://forms.gle/GKgvSdBBaipKtwSX9" target="_blank" rel="noopener">Apply here →</a>
-      </p>
-    </div>
-  </div>
-
-  <!-- Page hero -->
-  <div class="hero" style="padding: 3.5rem 2rem 3rem;">
-    <div class="hero-inner">
-      <span class="hero-eyebrow">Past Competitions</span>
-      <h1>Competition <em>Archive</em></h1>
-      <p class="hero-sub" style="margin-bottom:0;">
-        Questions, answer keys, and results from every town-wide competition.
-      </p>
-    </div>
+  <div class="page-hero">
+    <h1>Competition Archive</h1>
   </div>
 
   <main>
 
-    <!-- About Town-Wide Competitions -->
-    <div class="section-label">About</div>
-    <h2 class="section-title">Town-Wide <em>Competitions</em></h2>
-    <div class="divider"></div>
+    <div class="section">
+      <div class="section-title">About Town-Wide Competitions</div>
+      <hr class="section-rule" />
+      <p style="text-align:center; font-size:0.97rem; color:var(--text-muted); line-height:1.8; margin-bottom:3rem;">
+        The Math League holds a town-wide competition for Brookline middle schoolers every year.
+        All our coaches work together to write the competition questions.
+        We announce results with overall middle school rankings and recognize top-scoring students.
+      </p>
 
-    <p style="font-size:0.97rem; line-height:1.8; color:#374151; max-width:700px; margin-bottom:3rem;">
-      The Math League holds a town-wide competition for Brookline middle schoolers every year.
-      All our coaches work together to write the competition questions. We announce results with
-      overall middle school rankings and recognize top-scoring students.
-    </p>
+      <div class="section-title">Past Competitions</div>
+      <hr class="section-rule" />
 
-    <!-- Past Competitions -->
-    <div class="section-label">Archive</div>
-    <h2 class="section-title">Past <em>Competitions</em></h2>
-    <div class="divider"></div>
+      <div class="archive-wrap">
 
-    <div class="comp-table-wrap">
+        <div class="archive-year">
+          <h3>2026</h3>
+          <div class="archive-links">
+            <a class="arch-link" href="https://docs.google.com/document/d/1OXW0HxPo_0QNsVs7UZJidDaKzH2k_lq6brU32YjEoys/edit?usp=sharing" target="_blank" rel="noopener">Questions</a>
+            <span class="arch-sep">&sim;</span>
+            <a class="arch-link" href="https://docs.google.com/document/d/18tfF_MXOSjOUT-a3K_bJBq4tgSg5coBb0NRInlCEJ-A/edit?usp=sharing" target="_blank" rel="noopener">Answer Key</a>
+            <span class="arch-sep">&sim;</span>
+            <a class="arch-link" href="https://docs.google.com/presentation/d/12cgHz49Psiavoda9v7oUluVkq6vnOXv6Tmo2OTUY3Ck/edit?usp=sharing" target="_blank" rel="noopener">Results</a>
+          </div>
+        </div>
 
-      <!-- 2026 -->
-      <div class="comp-year">
-        <h3>2026</h3>
+        <div class="archive-year">
+          <h3>2025</h3>
+          <div class="archive-links">
+            <a class="arch-link" href="https://docs.google.com/document/d/1_GDgJGwf_2YB-JxHTyxcTEJgc5JVuJlWMQgySzkKrCw/edit?usp=sharing" target="_blank" rel="noopener">Questions</a>
+            <span class="arch-sep">&sim;</span>
+            <a class="arch-link" href="https://docs.google.com/document/d/1cX_SwY1YsZ9TadYcKiyBpi7WQYBpMGDIIcMWbhV7nK8/edit?tab=t.0" target="_blank" rel="noopener">Answer Key</a>
+            <span class="arch-sep">&sim;</span>
+            <a class="arch-link" href="https://docs.google.com/presentation/d/1IpGzDSyoUXgXxcxBdHqC7aLGPNbZKLA9V6jaKvvfyxc/edit" target="_blank" rel="noopener">Results</a>
+          </div>
+        </div>
+
+        <div class="archive-year">
+          <h3>2024</h3>
+          <div class="archive-links">
+            <a class="arch-link" href="https://docs.google.com/document/d/1NViW1ONmQXqdAGtNbeYj86Ifd4pC9pH7yzIZ-GlK99I/edit?usp=sharing" target="_blank" rel="noopener">Questions</a>
+            <span class="arch-sep">&sim;</span>
+            <a class="arch-link" href="https://docs.google.com/document/d/1B39Fw7CY7tdaOwHSMDEgxBan0JDNk6_SL9eFW4zkhY0/edit?tab=t.0" target="_blank" rel="noopener">Answer Key</a>
+          </div>
+        </div>
+
       </div>
-      <div class="comp-links">
-        <a class="comp-link" href="https://docs.google.com/document/d/1OXW0HxPo_0QNsVs7UZJidDaKzH2k_lq6brU32YjEoys/edit?usp=sharing" target="_blank" rel="noopener">
-          📄 Questions
-        </a>
-        <a class="comp-link" href="https://docs.google.com/document/d/18tfF_MXOSjOUT-a3K_bJBq4tgSg5coBb0NRInlCEJ-A/edit?usp=sharing" target="_blank" rel="noopener">
-          🗝 Answer Key
-        </a>
-        <a class="comp-link" href="https://docs.google.com/presentation/d/12cgHz49Psiavoda9v7oUluVkq6vnOXv6Tmo2OTUY3Ck/edit?usp=sharing" target="_blank" rel="noopener">
-          📊 Results
-        </a>
-      </div>
-
-      <!-- 2025 -->
-      <div class="comp-year">
-        <h3>2025</h3>
-      </div>
-      <div class="comp-links">
-        <a class="comp-link" href="https://docs.google.com/document/d/1_GDgJGwf_2YB-JxHTyxcTEJgc5JVuJlWMQgySzkKrCw/edit?usp=sharing" target="_blank" rel="noopener">
-          📄 Questions
-        </a>
-        <a class="comp-link" href="https://docs.google.com/document/d/1cX_SwY1YsZ9TadYcKiyBpi7WQYBpMGDIIcMWbhV7nK8/edit?tab=t.0" target="_blank" rel="noopener">
-          🗝 Answer Key
-        </a>
-        <a class="comp-link" href="https://docs.google.com/presentation/d/1IpGzDSyoUXgXxcxBdHqC7aLGPNbZKLA9V6jaKvvfyxc/edit" target="_blank" rel="noopener">
-          📊 Results
-        </a>
-      </div>
-
-      <!-- 2024 -->
-      <div class="comp-year">
-        <h3>2024</h3>
-      </div>
-      <div class="comp-links">
-        <a class="comp-link" href="https://docs.google.com/document/d/1NViW1ONmQXqdAGtNbeYj86Ifd4pC9pH7yzIZ-GlK99I/edit?usp=sharing" target="_blank" rel="noopener">
-          📄 Questions
-        </a>
-        <a class="comp-link" href="https://docs.google.com/document/d/1B39Fw7CY7tdaOwHSMDEgxBan0JDNk6_SL9eFW4zkhY0/edit?tab=t.0" target="_blank" rel="noopener">
-          🗝 Answer Key
-        </a>
-      </div>
-
     </div>
 
-    <!-- Apply CTA -->
     <div class="apply-box">
-      <div class="deadline-chip">📅 Deadline: May 31, 2025</div>
-      <h2>Want to Help Write the Questions?</h2>
-      <p>Apply to be a coach and help create next year's competition alongside the rest of our team.</p>
-      <a href="https://forms.gle/GKgvSdBBaipKtwSX9" target="_blank" rel="noopener" class="btn btn-gold">
-        Open Coach Application →
-      </a>
+      <p>Coach applications for 2025&ndash;26 are open. <strong>Deadline: May 31, 2025.</strong></p>
+      <a class="btn-apply" href="https://forms.gle/GKgvSdBBaipKtwSX9" target="_blank" rel="noopener">Apply to Coach</a>
     </div>
 
   </main>
 
-  <div class="contact-strip">
-    <p>Contact us at <a href="mailto:brooklinemathleague@gmail.com">brooklinemathleague@gmail.com</a></p>
-  </div>
-
   <footer>
-    <p>© 2025 Brookline Middle School Math League &nbsp;·&nbsp; Brookline High School &nbsp;·&nbsp; <a href="mailto:brooklinemathleague@gmail.com">brooklinemathleague@gmail.com</a></p>
+    <p>Brookline Middle School Math League &nbsp;&middot;&nbsp; Brookline High School &nbsp;&middot;&nbsp; <a href="mailto:brooklinemathleague@gmail.com">brooklinemathleague@gmail.com</a></p>
   </footer>
 
 </body>

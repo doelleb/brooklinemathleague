@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>News — Brookline Math League</title>
+  <title>News &mdash; Brookline Math League</title>
   <meta name="description" content="Latest news and updates from the Brookline Middle School Math League." />
   <link rel="stylesheet" href="style.css" />
 </head>
@@ -11,108 +11,66 @@
 
   <nav>
     <div class="nav-inner">
-      <a href="index.html" class="nav-brand">
-        <div class="nav-logo">∑</div>
-        <span class="nav-title">Brookline Math League</span>
-      </a>
-      <button class="nav-toggle" aria-label="Toggle menu" onclick="document.querySelector('.nav-links').classList.toggle('open')">
-        <span></span><span></span><span></span>
-      </button>
-      <ul class="nav-links">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="competition-archive.html">Competition Archive</a></li>
-        <li><a href="news.html" class="active">News</a></li>
-      </ul>
+      <div class="nav-left" id="navMenu">
+        <div class="nav-item">
+          <a href="index.html">Home</a>
+        </div>
+        <div class="nav-item">
+          <a href="competition-archive.html">Competition Archive</a>
+        </div>
+        <div class="nav-item">
+          <a href="news.html" class="active">News</a>
+        </div>
+        <div class="nav-item">
+          <a href="mailto:brooklinemathleague@gmail.com">Contact</a>
+        </div>
+      </div>
+      <div class="nav-right">
+        <div class="nav-auth">
+          <a href="https://forms.gle/GKgvSdBBaipKtwSX9" target="_blank" rel="noopener">Apply</a>
+        </div>
+        <button class="nav-toggle" aria-label="Toggle menu" onclick="document.getElementById('navMenu').classList.toggle('open')">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
     </div>
   </nav>
 
-  <!-- Application banner -->
-  <div class="alert">
-    <div class="alert-inner">
-      <span class="alert-badge">Now Open</span>
-      <p>Coach applications are open — deadline <strong>May 31, 2025</strong>.
-        <a href="https://forms.gle/GKgvSdBBaipKtwSX9" target="_blank" rel="noopener">Apply here →</a>
-      </p>
-    </div>
-  </div>
-
-  <!-- Page hero -->
-  <div class="hero" style="padding: 3.5rem 2rem 3rem;">
-    <div class="hero-inner">
-      <span class="hero-eyebrow">Latest Updates</span>
-      <h1>BML <em>News</em></h1>
-      <p class="hero-sub" style="margin-bottom:0;">
-        Announcements, features, and highlights from the Brookline Math League.
-      </p>
-    </div>
+  <div class="page-hero">
+    <h1>News</h1>
   </div>
 
   <main>
 
-    <div class="section-label">Latest</div>
-    <h2 class="section-title">Recent <em>News</em></h2>
-    <div class="divider"></div>
+    <div class="section">
+      <div class="section-title">Latest</div>
+      <hr class="section-rule" />
 
-    <!-- News item 1 -->
-    <div class="news-item">
-      <div class="news-item-header">
-        <h2>📰 Featured in the Cypress Newspaper!</h2>
+      <div class="news-entry">
+        Coach applications for 2025&ndash;26 are now open. Deadline is <strong>May 31, 2025</strong>.
+        <a href="https://forms.gle/GKgvSdBBaipKtwSX9" target="_blank" rel="noopener">Apply here.</a>
       </div>
-      <div class="news-item-body">
-        <p>
-          Brookline Math League was featured in the Cypress, BHS's student newspaper.
-          Our founder Erica Hou was recognized as Community Member of the Month for her
-          work growing the league and expanding our coaching program across Brookline middle schools.
-        </p>
-        <p>
-          Read the full article:
-          <a href="https://thecypressonline.com/56304/news/community-member-of-the-month-erica-hou-exponentially-helps-math-league/" target="_blank" rel="noopener">
-            Community Member of the Month: Erica Hou Exponentially Helps Math League →
-          </a>
-        </p>
+
+      <div class="news-entry">
+        Results and solutions from our 2026 town-wide competition have been posted.
+        <a href="https://docs.google.com/presentation/d/12cgHz49Psiavoda9v7oUluVkq6vnOXv6Tmo2OTUY3Ck/edit?usp=sharing" target="_blank" rel="noopener">Results and solutions</a> are now available.
+      </div>
+
+      <div class="news-entry">
+        BML was featured in the Cypress, Brookline High School&rsquo;s student newspaper &mdash;
+        <a href="https://thecypressonline.com/56304/news/community-member-of-the-month-erica-hou-exponentially-helps-math-league/" target="_blank" rel="noopener">Community Member of the Month: Erica Hou Exponentially Helps Math League.</a>
       </div>
     </div>
 
-    <!-- News item 2 — application announcement -->
-    <div class="news-item">
-      <div class="news-item-header">
-        <h2>📋 2025–26 Coach Applications Now Open</h2>
-      </div>
-      <div class="news-item-body">
-        <p>
-          We're looking for BHS student volunteers to serve as math coaches for Brookline middle schoolers
-          in the 2025–26 school year. Coaches attend practice sessions at local middle schools and
-          collaborate to write questions for the town-wide spring competition.
-        </p>
-        <p>
-          <strong>Application deadline: May 31, 2025.</strong>
-        </p>
-        <p>
-          <a href="https://forms.gle/GKgvSdBBaipKtwSX9" target="_blank" rel="noopener" class="btn btn-gold" style="margin-top:0.25rem; display:inline-flex;">
-            Apply Now →
-          </a>
-        </p>
-      </div>
-    </div>
-
-    <!-- Apply CTA -->
     <div class="apply-box">
-      <div class="deadline-chip">📅 Deadline: May 31, 2025</div>
-      <h2>Join the Team</h2>
-      <p>Applications for the 2025–26 coaching year are open now.</p>
-      <a href="https://forms.gle/GKgvSdBBaipKtwSX9" target="_blank" rel="noopener" class="btn btn-gold">
-        Open Coach Application →
-      </a>
+      <p>Coach applications for 2025&ndash;26 are open. <strong>Deadline: May 31, 2025.</strong></p>
+      <a class="btn-apply" href="https://forms.gle/GKgvSdBBaipKtwSX9" target="_blank" rel="noopener">Apply to Coach</a>
     </div>
 
   </main>
 
-  <div class="contact-strip">
-    <p>Contact us at <a href="mailto:brooklinemathleague@gmail.com">brooklinemathleague@gmail.com</a></p>
-  </div>
-
   <footer>
-    <p>© 2025 Brookline Middle School Math League &nbsp;·&nbsp; Brookline High School &nbsp;·&nbsp; <a href="mailto:brooklinemathleague@gmail.com">brooklinemathleague@gmail.com</a></p>
+    <p>Brookline Middle School Math League &nbsp;&middot;&nbsp; Brookline High School &nbsp;&middot;&nbsp; <a href="mailto:brooklinemathleague@gmail.com">brooklinemathleague@gmail.com</a></p>
   </footer>
 
 </body>
